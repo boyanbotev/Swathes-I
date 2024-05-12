@@ -6,16 +6,19 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Grid Test 1.unity
+    path: Assets/Scenes/Santorini 1.unity
+    guid: 00945014999ae394eb05c052bc7fc097
+  - enabled: 1
+    path: Assets/Scenes/Santorini.unity
     guid: 032a282c6fb50524d9bb1c661e3cf1f0
   - enabled: 1
-    path: Assets/Scenes/Grid Test.unity
+    path: Assets/Scenes/WomanGrid.unity
     guid: 6cd148e8558ba0e4e8929c7a4f18ee2a
   - enabled: 1
     path: Assets/Scenes/ShapeTest.unity
     guid: 5834e64a255f7c542b403a70701b6c7b
   - enabled: 1
-    path: Assets/Scenes/WomanScene.unity
+    path: Assets/Scenes/RandomDiagonal.unity
     guid: 4e080a1261c89594abaee86e04ebf787
   - enabled: 1
     path: Assets/Scenes/LeavesScene.unity
