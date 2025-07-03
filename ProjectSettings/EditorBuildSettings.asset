@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/banner art.unity
+    guid: e68c4a97ec0ccf34b8443c1c8c7a1204
+  - enabled: 1
     path: Assets/Scenes/Santorini 1.unity
     guid: 00945014999ae394eb05c052bc7fc097
   - enabled: 1
