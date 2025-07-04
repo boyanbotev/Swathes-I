@@ -1,8 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.ShaderGraph.Internal;
 using UnityEngine;
-using UnityEngine.Rendering;
 
 public class MediaManager : MonoBehaviour
 {
@@ -15,6 +11,7 @@ public class MediaManager : MonoBehaviour
     [SerializeField] float maxX = 100;
     [SerializeField] private float maxY = 100;
     [SerializeField] float speed;
+    float colorChange = 0.001f;
 
     private void Start()
     {
@@ -56,6 +53,44 @@ public class MediaManager : MonoBehaviour
         {
             MoveImage(Vector2.left);
         }
+        else if (Input.GetKey(KeyCode.Y))
+        {
+            IncreaseBackgroundColor();
+        } 
+        else if (Input.GetKey(KeyCode.H))
+        {
+            LowerBackgroundColor();
+        }
+    }
+
+    void LowerBackgroundColor()
+    {
+        Color cameraColor = Camera.main.backgroundColor;
+        var r = cameraColor.r;
+        var g = cameraColor.g;
+        var b = cameraColor.b;
+
+        if (r == 0 || g == 0 || b == 0) return;
+        r -= colorChange;
+        g -= colorChange;
+        b -= colorChange;
+        cameraColor = new Color(r, g, b, cameraColor.a);
+        Camera.main.backgroundColor = cameraColor;
+    }
+
+    void IncreaseBackgroundColor()
+    {
+        Color cameraColor = Camera.main.backgroundColor;
+        var r = cameraColor.r;
+        var g = cameraColor.g;
+        var b = cameraColor.b;
+
+        if (r == 1 || g == 1 || b == 1) return;
+        r += colorChange;
+        g += colorChange;
+        b += colorChange;
+        cameraColor = new Color(r, g, b, cameraColor.a);
+        Camera.main.backgroundColor = cameraColor;
     }
 
     void MoveImage(Vector2 dir)

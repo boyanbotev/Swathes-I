@@ -229,6 +229,9 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 76ba0721c9b3e36409dc458dd1cdf64e, type: 3}
   - {fileID: 8300000, guid: 83e5dfc89487aac408fb9159934d2c5b, type: 3}
   - {fileID: 8300000, guid: 2127a77223304f043ae759f8da17fa4a, type: 3}
+  maxX: 5
+  maxY: 5
+  speed: 1
 --- !u!4 &261696401
 Transform:
   m_ObjectHideFlags: 0
@@ -1758,7 +1761,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
